@@ -1,3 +1,5 @@
+# main.py
+
 from book_class import Book
 
 def main():
@@ -5,14 +7,13 @@ def main():
     my_book = Book("1984", "George Orwell", 1949)
 
     # Demonstrating the __str__ method
-    print(my_book)  # Expected to use __str__
+    print(my_book)  # Expected to use __str__: '1984' by George Orwell, published in 1949
 
     # Demonstrating the __repr__ method
-    print(repr(my_book))  # Expected to use __repr__
+    print(repr(my_book))  # Expected to use __repr__: Book('1984', 'George Orwell', 1949)
 
     # Deleting a book instance to trigger __del__
     del my_book
 
 if __name__ == "__main__":
     main()
-
